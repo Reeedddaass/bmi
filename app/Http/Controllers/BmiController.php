@@ -22,6 +22,6 @@ class BmiController extends Controller
 
         $bmi = $weight / ($height * $height);
 
-        return view('welcome', ['bmi' => number_format($bmi,1)]);
+        return view('result', ['bmi' => number_format($bmi,1)]);
     }
 }
