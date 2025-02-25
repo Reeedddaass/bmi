@@ -27,20 +27,6 @@
                 <button type="submit" class="w-full my-4 px-4 py-2 rounded-md bg-gray-300 hover:bg-gray-50 font-semibold"> Calculate </button>
             </form>
 
-            @if(isset($bmi))
-                <div class="m-4 p-4 text-center">
-                    <h3 class="text-lg">Your BMI: <span class="font-semibold">{{ $bmi }}</span></h3>
-                    @if($bmi < 18.5)
-                        <p class="text-yellow-500">You are underweight</p>
-                    @elseif($bmi >= 18.5 && $bmi <= 24.9)
-                        <p class="text-green-500">You are normal weight</p>
-                    @elseif($bmi >= 25 && $bmi <= 29.9)
-                        <p class="text-orange-500">You are overweight</p>
-                    @else
-                        <p class="text-red-700">You are obese</p>
-                    @endif
-                </div>
-            @endif
         </div>
     </body>
 </html>
