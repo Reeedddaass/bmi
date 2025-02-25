@@ -10,7 +10,7 @@
     </head>
     <body class="bg-gray-700 flex flex-col justify-center items-center h-screen">
 
-        <div class="bg-gray-500 border border-gray-400 p-12 rounded-lg mb-6">
+        <div class="bg-gray-500 border border-gray-400 p-12 rounded-lg mb-6 overflow-auto w-96 h-90">
             <table class="w-full border-collapse border border-gray-400 text-white">
                 <tbody>
                 <tr class="bg-gray-600">
@@ -37,7 +37,7 @@
             </table>
         </div>
 
-        <div class="bg-gray-500 border border-gray-400 p-12 rounded-lg mb-6 text-center">
+        <div class="bg-gray-500 border border-gray-400 p-12 rounded-lg mb-6 text-center overflow-auto w-96 h-90">
             @if(isset($bmi))
                 <div class="m-4 p-4 text-white">
                     <h3 class="text-lg">Your BMI: <span class="font-semibold">{{ $bmi }}</span></h3>
